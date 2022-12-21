@@ -7,8 +7,8 @@ function Banner() {
             <div className="hero-overlay bg-opacity-20"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-lg absolute inset-y-80 lg:left-32 md:left-28 sm:16">
-                    <h1 className="banner-text-font mb-5 text-8xl font-bold text-pink-500">Hello Ladies</h1>
-                    <p className="banner-text-font mb-5 text-4xl font-bold text-purple-500">To make your self more attractive,  By our masterclass Beauty instruction</p>
+                    <h1 className="banner-text-font mb-5 lg:text-8xl md::text-8xl text-6xl font-bold text-pink-500">Hello Ladies</h1>
+                    <p className="banner-text-font mb-5 lg:text-4xl md:text-4xl text-3xl font-bold text-purple-500">To make your self more attractive,  By our masterclass Beauty instruction</p>
                     <Link to='/ServiceCenter' ><button className="btn btn-wide bg-pink-600 ">BUY NOW</button></Link>
                 </div>
             </div>

@@ -20,20 +20,22 @@ function Header() {
               <li><Link id='logo' to='/addService'>Add Service</Link></li>
               <li><Link id='logo' to='/blogs' >Blogs</Link></li>
               <li><Link id='logo' to='/myReviews' >My reviews</Link></li>
+              <Link onClick={logOutHnadler} className="btn btn-xs md:hidden sm:btn-sm md:btn-md lg:btn-lg bg-purple-600">Log out</Link>
             </ul>
           </div >
-          <Link id='logo' className="btn btn-ghost normal-case text-5xl text-pink-500" to='/'>Glamour<span className='text-5xl text-purple-500'>Support</span></Link>
+          <Link id='logo' className="btn btn-ghost normal-case lg:text-5xl md:text-5xl text-4xl text-pink-500" to='/'>Glamour<span className='lg:text-5xl md:text-5xl text-4xl text-purple-500'>Support</span></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li><Link id='logo' to='/addService'>Add Service</Link></li>
             <li><Link id='logo' to='/blogs' >Blogs</Link></li>
             <li><Link id='logo' to='/myReviews' >My reviews</Link></li>
+            
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end hidden lg:block md:block">
           {user?.uid ?
-            <div className='flex' >
+            <div className='flex justify-end' >
               <div className='flex'>
                 <div className='mr-7 justify-center align-middle'>
                 </div>

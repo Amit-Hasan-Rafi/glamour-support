@@ -2,7 +2,6 @@ import React from 'react'
 
 function ReviewsData({ RD }) {
     const { email, username, photo, review } = RD
-    console.log(username)
     return (
         <div className="stat border-solid border-2 border-gray-500 mb-3">
             <div className="stat-figure text-secondary">
@@ -12,10 +11,10 @@ function ReviewsData({ RD }) {
                     </div>
                 </div>
             </div>
-            <div className="stat-value">{username}</div>
+            <div className="stat-value lg:text-5xl md:text-4xl text-xl">{username}</div>
             <div className="stat-desc text-secondary">{email}</div>
-            <div className="stat-title">Review:</div>
-            <div className="text-3xl">{review}</div>
+            <div className="stat-title ">Review:</div>
+            <div className="lg:text-3xl md:text-2xl text-sm">{review}</div>
         </div>
     )
 }

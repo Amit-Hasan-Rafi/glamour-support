@@ -2,11 +2,11 @@ import React from 'react'
 
 function AboutArtist() {
   return (
-    <div className='text-center ml-60 mr-60'>
+    <div className='text-center lg:ml-60 lg:mr-60 mr-10 ml-10'>
       <h1 id='logo' className='text-4xl font-bold '>About our Artist</h1>
       <div className="divider"></div>
       <div className="avatar">
-        <div className="w-96 rounded-full">
+        <div className="lg:w-96 md:w-96 w-64 rounded-full">
           <img src="https://cdn.shopify.com/s/files/1/1463/9662/files/bio.jpg?4906818570536088227" />
         </div>
       </div>

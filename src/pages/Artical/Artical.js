@@ -2,7 +2,7 @@ import React from 'react'
 
 function Artical() {
     return (
-        <div className='grid grid-cols-2  ml-60 mr-60'>
+        <div className='lg:grid lg:grid-cols-2 flex flex-col lg:ml-60 lg:mr-60 mr-10 ml-10'>
             <div>
                 <img className='w-fit' src="https://img.freepik.com/premium-photo/portrait-beautiful-female-model-white-background_58409-7499.jpg" alt="" />
             </div>

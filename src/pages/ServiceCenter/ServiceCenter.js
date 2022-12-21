@@ -10,11 +10,11 @@ function ServiceCenter() {
             .then(data => setItems(data))
     }, [])
     return (
-        <div className='p-20' >
+        <div className='lg:p-20 p-5' >
             <div className='text-center text-6xl mb-16' >
                 <h1 id='logo' >All Services collection</h1>
             </div>
-            <div className='grid grid-cols-3 gap-16'>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-16'>
                 {
                     items.map(item => <AllServices
                         key={item._id}

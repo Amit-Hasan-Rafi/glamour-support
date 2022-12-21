@@ -55,7 +55,7 @@ function SingleServiceDetails() {
             <div className='text-center lg:text-6xl md:text-5xl sm:text-5xl mt-10' >
                 <h1 id='logo' >Service Details</h1>
             </div>
-            <div className='grid grid-cols-3 gap-10 lg:p-20 md:p-10 p-10'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 lg:gap-10 gap-6 lg:p-20 md:p-10 p-10'>
                 <PhotoProvider>
                     <PhotoView src={img2}>
                         <img className='w-fit rounded-lg' src={img2} />
@@ -68,15 +68,15 @@ function SingleServiceDetails() {
                     </PhotoView>
                 </PhotoProvider>
             </div>
-            <div className='pr-20 pl-20 mb-16'>
-                <li id='logo' className='text-5xl font-extrabold'>{name}</li>
+            <div className='lg:pr-20 lg:pl-20 lg:mb-16 p-8 '>
+                <li id='logo' className='lg:text-5xl md:text-3xl text-2xl font-extrabold'>{name}</li>
                 <p>{about}</p>
             </div>
-            <div className='pr-20 pl-20 mb-16'>
-                <li id='logo' className='text-5xl font-extrabold'>Review Section</li>
+            <div className='lg:pr-20 lg:pl-20 lg:mb-16 flex justify-center '>
+                <p id='logo' className='text-5xl font-extrabold underline'>Review Section</p>
             </div>
-            <div className='mr-20 ml-20 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:flex sm:flex-col gap-10 mb-10'>
-                <form onSubmit={HandelAddReview} className="form-control">
+            <div className='lg:grid lg:grid-cols-2 grid-cols-1 p-11 gap-10'>
+                <form onSubmit={HandelAddReview} className="form-control mb-10">
                     <label className="label">
                         <span className="label-text text-2xl font-extrabold">Post Review:</span>
                     </label>
