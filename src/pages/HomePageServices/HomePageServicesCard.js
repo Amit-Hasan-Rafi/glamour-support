@@ -16,7 +16,7 @@ function HomePageServicesCard({ Service }) {
                 <div className=' flex justify-between'>
                     <div>
                         <div>
-                            <h2 className='text-4xl font-extrabold'>${price}</h2>
+                            <h2 className='lg:text-4xl mg:text-4xl text-2xl font-extrabold'>${price}</h2>
                         </div>
                         <div className="rating">
                             <input type="radio" className="mask mask-star-2 bg-orange-400" />
@@ -27,7 +27,7 @@ function HomePageServicesCard({ Service }) {
                         </div>
                     </div>
                     <div className="card-actions mt-5">
-                        <Link to={`/ServiceCenter/${_id}`}><button className="btn btn-outline btn-secondary">Read Details</button></Link>
+                        <Link to={`/ServiceCenter/${_id}`}><button className="btn btn-outline btn-secondary ">Read Details</button></Link>
                     </div>
                 </div>
             </div>

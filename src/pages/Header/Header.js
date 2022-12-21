@@ -20,7 +20,14 @@ function Header() {
               <li><Link id='logo' to='/addService'>Add Service</Link></li>
               <li><Link id='logo' to='/blogs' >Blogs</Link></li>
               <li><Link id='logo' to='/myReviews' >My reviews</Link></li>
-              <Link onClick={logOutHnadler} className="btn btn-xs md:hidden sm:btn-sm md:btn-md lg:btn-lg bg-purple-600">Log out</Link>
+              {user?.uid ?
+                <Link onClick={logOutHnadler} className="btn btn-xs md:hidden sm:btn-sm md:btn-md lg:btn-lg bg-purple-600">Log out</Link>
+                :
+                <>
+                  <Link className='btn mr-2 btn-xs sm:btn-sm md:hidden md:btn-md lg:btn-lg bg-pink-600 mb-1' to='/login'>Log in</Link>
+                  <Link className='btn mr-2 btn-xs sm:btn-sm md:hidden md:btn-md lg:btn-lg bg-purple-600' to='/ragister'>Ragister</Link>
+                </>
+              }
             </ul>
           </div >
           <Link id='logo' className="btn btn-ghost normal-case lg:text-5xl md:text-5xl text-4xl text-pink-500" to='/'>Glamour<span className='lg:text-5xl md:text-5xl text-4xl text-purple-500'>Support</span></Link>
@@ -30,7 +37,7 @@ function Header() {
             <li><Link id='logo' to='/addService'>Add Service</Link></li>
             <li><Link id='logo' to='/blogs' >Blogs</Link></li>
             <li><Link id='logo' to='/myReviews' >My reviews</Link></li>
-            
+
           </ul>
         </div>
         <div className="navbar-end hidden lg:block md:block">
